@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const blogSchema = new Schema({
   title: String,
   content: String,
+  imageURL:String,
   createdAt: { type: Date, default: Date.now },
   _user: { type: Schema.Types.ObjectId, ref: 'User' }
 });
